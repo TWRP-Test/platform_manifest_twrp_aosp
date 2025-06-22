@@ -41,7 +41,7 @@
     <project path="bootable/recovery" name="android_bootable_recovery" remote="YuKongA" revision="android-14.1"/>
 
     <!-- Use TeamWin repos for full recovery compatibility -->
-    <project path="build/make" name="android_build" remote="TeamWin" revision="android-14.1" groups="pdk">
+    <project path="build/make" name="android_build" remote="YuKongA" revision="android-14.1" groups="pdk">
         <copyfile src="core/root.mk" dest="Makefile"/>
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk"/>
         <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default"/>
