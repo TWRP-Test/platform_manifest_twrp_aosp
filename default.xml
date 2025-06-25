@@ -2,7 +2,7 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch=".."
+           fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
   <default revision="refs/tags/android-16.0.0_r1"
            remote="aosp"
@@ -1022,4 +1022,8 @@
   </project>
   <!-- END open-source projects -->
 
+  <!-- BEGIN TWRP projects -->
+  <include name="remove.xml" />
+  <include name="twrp.xml" />
+  <!-- END TWRP projects -->
 </manifest>
