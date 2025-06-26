@@ -60,6 +60,9 @@
     <project path="system/vold" name="android_system_vold" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="system/extras" name="android_system_extras" remote="TWRP-A16" revision="twrp-16.0"/>
 
+    <!-- Use TeamWin custom vendor repo for build system -->
+    <project path="vendor/twrp" name="android_vendor_twrp" remote="TWRP-A16" revision="twrp-16.0" />
+
     <!-- Include phh's treble repo for lptools support -->
     <project name="phhusson/vendor_lptools" path="external/lptools" remote="github" revision="master" />
 
