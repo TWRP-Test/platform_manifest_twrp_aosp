@@ -300,6 +300,9 @@
     <remove-project path="external/roboto-flex-fonts" />
     <remove-project path="external/rootdev" />
     <remove-project path="external/rnnoise" />
+    <remove-project path="external/rust/crabbyavif" />
+    <remove-project path="external/rust/crates/v4l2r" />
+    <remove-project path="external/rust/crates/vhost-device-vsock" />
     <remove-project path="external/ruy" />
     <remove-project path="external/s2-geometry-library-java" />
     <remove-project path="external/scapy" />
