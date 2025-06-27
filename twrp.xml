@@ -49,4 +49,6 @@
   <project path="system/vold" name="android_system_vold" groups="pdk" remote="TeamWin-Next" />
   <project path="system/update_engine" name="android_system_update_engine" groups="pdk" remote="TeamWin-Next" />
 
+  <!-- Vendor -->
+  <project path="vendor/twrp" name="android_vendor_twrp" remote="TeamWin-Next" />
 </manifest>
