@@ -879,7 +879,6 @@
   <remove-project name="platform/test/cts-root" />
   <remove-project name="platform/test/mts" />
   <remove-project name="platform/test/suite_harness" />
-  <remove-project name="platform/test/vts-testcase/hal" />
   <remove-project name="platform/test/vts-testcase/kernel" />
   <remove-project name="platform/test/vts-testcase/nbu" />
   <remove-project name="platform/test/vts-testcase/performance" />
