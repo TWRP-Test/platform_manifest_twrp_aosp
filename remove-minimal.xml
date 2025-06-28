@@ -517,6 +517,7 @@
     <remove-project path="packages/services/BuiltInPrintService" />
     <remove-project path="packages/services/AlternativeNetworkAccess" />
     <remove-project path="packages/services/Car" />
+    <remove-project path="packages/services/DeviceAsWebcam" />
     <remove-project path="packages/services/Iwlan" />
     <remove-project path="packages/services/Mms" />
     <remove-project path="packages/services/Mtp" />
