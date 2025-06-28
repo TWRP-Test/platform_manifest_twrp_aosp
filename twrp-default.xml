@@ -9,7 +9,7 @@
             review="https://review.lineageos.org"/>
 
     <remote name="TWRP-A16"
-            fetch="git@github.com:TWRP-Test"/>
+            fetch="https://github.com/TWRP-Test"/>
 
     <remote name="github"
             fetch="https://github.com"/>

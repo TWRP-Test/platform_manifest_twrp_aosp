@@ -44,11 +44,11 @@ with [Git and Repo](https://source.android.com/source/using-repo.html).
 
 To initialize your local repository using the AOSP trees to build TWRP, use a command like this:
 
-    repo init -u https://github.com/YuKongA/platform_manifest_twrp_aosp.git -b twrp-14.1
+    repo init -u https://github.com/TWRP-Test/platform_manifest_twrp_aosp.git -b twrp-16.0
 
 To initialize a shallow clone, which will save even more space, use a command like this:
 
-    repo init --depth=1 -u https://github.com/YuKongA/platform_manifest_twrp_aosp.git -b twrp-14.1
+    repo init --depth=1 -u https://github.com/TWRP-Test/platform_manifest_twrp_aosp.git -b twrp-16.0
 
 Then to sync up:
 
@@ -56,7 +56,7 @@ Then to sync up:
 
 Then to setup the build:
 
-     cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_<device>-ap2a-eng
+     cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_<device>-bp1a-eng
 
 The build target is dependent on the device, and should reflect the location of stock recovery on the device. Issue the build command that applies to your device:
 - Recovery partition: `mka recoveryimage`
