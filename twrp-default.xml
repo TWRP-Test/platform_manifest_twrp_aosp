@@ -28,6 +28,7 @@
     <remove-project name="platform/system/extras"/>
     <remove-project name="platform/system/libhidl" />
     <remove-project name="platform/system/security" />
+    <remove-project name="platform/system/sepolicy" />
     <remove-project name="platform/system/update_engine" />
     <remove-project name="platform/system/vold" />
 
@@ -55,6 +56,7 @@
     <project path="hardware/interfaces" name="android_hardware_interfaces" remote="TWRP-A16" revision="twrp-16.0" />
     <project path="system/core" name="android_system_core" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="system/libhidl" name="android_system_libhidl" remote="TWRP-A16" revision="twrp-16.0"/>
+    <project path="system/sepolicy" name="android_system_sepolicy" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="system/security" name="android_system_security" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="system/update_engine" name="android_system_update_engine" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="system/vold" name="android_system_vold" remote="TWRP-A16" revision="twrp-16.0"/>
