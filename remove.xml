@@ -784,7 +784,6 @@
   <remove-project name="platform/prebuilts/bundletool" />
   <remove-project name="platform/prebuilts/checkcolor" />
   <remove-project name="platform/prebuilts/checkstyle" />
-  <remove-project name="platform/prebuilts/clang-tools" />
   <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
   <remove-project name="platform/prebuilts/cmake/linux-x86" />
   <remove-project name="platform/prebuilts/cmdline-tools" />
@@ -840,9 +839,6 @@
   <remove-project name="platform/system/ca-certificates" />
   <remove-project name="platform/system/connectivity/wificond" />
   <remove-project name="platform/system/cros-codecs" />
-  <remove-project name="platform/system/dmesgd" />
-  <remove-project name="platform/system/gatekeeper" />
-  <remove-project name="platform/system/hwservicemanager" />
   <remove-project name="platform/system/incremental_delivery" />
   <remove-project name="platform/system/keymaster" />
   <remove-project name="platform/system/keymint" />
@@ -863,11 +859,9 @@
   <remove-project name="platform/system/netd" />
   <remove-project name="platform/system/nvram" />
   <remove-project name="platform/system/secretkeeper" />
-  <remove-project name="platform/system/secure_element" />
   <remove-project name="platform/system/see/authmgr" />
   <remove-project name="platform/system/teeui" />
   <remove-project name="platform/system/testing/gtest_extras" />
-  <remove-project name="platform/system/timezone" />
   <remove-project name="platform/system/usb_info_tools" />
   <remove-project name="platform/system/zygote" />
 
