@@ -23,6 +23,7 @@
     <remove-project name="platform/external/libxml2" />
     <remove-project name="platform/external/sqlite" />
     <remove-project name="platform/external/libchrome" />
+    <remove-project name="platform/frameworks/hardware/interfaces" />        
     <remove-project name="platform/hardware/interfaces"/>
     <remove-project name="platform/system/core" />
     <remove-project name="platform/system/extras"/>
@@ -53,6 +54,7 @@
     <project path="external/libxml2" name="android_external_libxml2" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="external/sqlite" name="android_external_sqlite" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="external/libchrome" name="android_external_libchrome" remote="TWRP-A16" revision="twrp-16.0"/>
+    <project path="frameworks/hardware/interfaces" name="android_frameworks_hardware_interfaces" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="hardware/interfaces" name="android_hardware_interfaces" remote="TWRP-A16" revision="twrp-16.0" />
     <project path="system/core" name="android_system_core" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="system/libhidl" name="android_system_libhidl" remote="TWRP-A16" revision="twrp-16.0"/>
