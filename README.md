@@ -56,7 +56,7 @@ Then to sync up:
 
 Then to setup the build:
 
-     cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_<device>-bp1a-eng
+     cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_<device>-bp2a-eng
 
 The build target is dependent on the device, and should reflect the location of stock recovery on the device. Issue the build command that applies to your device:
 - Recovery partition: `mka recoveryimage`
