@@ -15,6 +15,7 @@
             fetch="https://github.com"/>
 
     <!-- We need the TeamWin forks of these repos -->
+    <remove-project name="platform/bionic"/>
     <remove-project name="platform/bootable/recovery"/>
     <remove-project name="platform/build" />
     <remove-project name="platform/build/soong" />
@@ -49,7 +50,8 @@
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
     </project>
-    <project path="cts" name="android_cts" remote="TWRP-A16" revision="twrp-16.0"/>
+    <project path="bionic" name="android_bionic" remote="TWRP-A16" revision="twrp-16.0"/>
+    <project path="cts" name="android_cts" remote="TWRP-A16" revision="twrp-16.0"/＞
     <project path="external/icu" name="android_external_icu" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="external/libxml2" name="android_external_libxml2" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="external/sqlite" name="android_external_sqlite" remote="TWRP-A16" revision="twrp-16.0"/>
