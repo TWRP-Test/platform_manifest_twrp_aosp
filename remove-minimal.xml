@@ -26,7 +26,7 @@
     <remove-project path="device/linaro/dragonboard-kernel" />
     <remove-project path="device/linaro/hikey" />
     <remove-project path="device/linaro/hikey-kernel" />
-    <remove-project path="device/sample" /> 
+    <remove-project path="device/sample" />
     <remove-project path="kernel/prebuilts/6.1/arm64" />
     <remove-project path="kernel/prebuilts/6.1/x86_64" />
     <remove-project path="kernel/prebuilts/6.6/arm64" />
@@ -312,6 +312,7 @@
     <remove-project path="external/setupdesign" />
     <remove-project path="external/shaderc/spirv-headers" />
     <remove-project path="external/shflags" />
+    <remove-project path="external/skia" />
     <remove-project path="external/sl4a" />
     <remove-project path="external/slf4j" />
     <remove-project path="external/snakeyaml" />
@@ -528,19 +529,19 @@
 
     <remove-project path="platform_testing" />
 
-    <remove-project name="platform/prebuilts/android-emulator"/>
+    <remove-project name="platform/prebuilts/android-emulator" />
     <remove-project name="platform/prebuilts/asuite" />
     <remove-project name="platform/prebuilts/bundletool" />
-    <remove-project name="platform/prebuilts/checkcolor"/>
-    <remove-project name="platform/prebuilts/checkstyle"/>
-    <remove-project name="platform/prebuilts/clang/host/darwin-x86"/>
+    <remove-project name="platform/prebuilts/checkcolor" />
+    <remove-project name="platform/prebuilts/checkstyle" />
+    <remove-project name="platform/prebuilts/clang/host/darwin-x86" />
     <remove-project name="platform/prebuilts/cmdline-tools" />
-    <remove-project name="platform/prebuilts/devtools"/>
+    <remove-project name="platform/prebuilts/devtools" />
     <remove-project name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" />
-    <remove-project name="platform/prebuilts/go/darwin-x86"/>
+    <remove-project name="platform/prebuilts/go/darwin-x86" />
     <remove-project name="platform/prebuilts/ktlint" />
     <remove-project name="platform/prebuilts/manifest-merger" />
-    <remove-project name="platform/prebuilts/maven_repo/bumptech"/>
+    <remove-project name="platform/prebuilts/maven_repo/bumptech" />
     <remove-project name="platform/prebuilts/module_sdk/art" />
     <remove-project name="platform/prebuilts/module_sdk/conscrypt" />
     <remove-project name="platform/prebuilts/module_sdk/Connectivity" />
@@ -554,7 +555,7 @@
     <remove-project name="platform/prebuilts/module_sdk/StatsD" />
     <remove-project name="platform/prebuilts/module_sdk/Wifi" />
     <remove-project name="platform/prebuilts/ndk" />
-    <remove-project name="platform/prebuilts/qemu-kernel"/>
+    <remove-project name="platform/prebuilts/qemu-kernel" />
     <remove-project name="platform/prebuilts/remoteexecution-client" />
     <remove-project name="platform/prebuilts/runtime" />
     <remove-project name="platform/prebuilts/r8" />
@@ -597,7 +598,7 @@
     <remove-project path="tools/test/connectivity" />
     <remove-project path="tools/test/mobly_extensions" />
     <remove-project path="tools/test/openhst" />
-    <remove-project path="tools/tradefederation/prebuilts"/>
+    <remove-project path="tools/tradefederation/prebuilts" />
     <remove-project path="tools/treble" />
     <remove-project path="tools/trebuchet" />
 
