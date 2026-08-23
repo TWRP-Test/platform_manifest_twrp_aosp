@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-    <remote name="TeamWin"
-            fetch="https://github.com/TeamWin"
-            review="https://gerrit.twrp.me"/>
-
     <remote name="LineageOS"
             fetch="https://github.com/LineageOS"
             review="https://review.lineageos.org"/>
@@ -14,7 +10,7 @@
     <remote name="github"
             fetch="https://github.com"/>
 
-    <!-- We need the TeamWin forks of these repos -->
+    <!-- Replace AOSP projects with the TWRP-Test forks. -->
     <remove-project name="platform/bionic"/>
     <remove-project name="platform/bootable/recovery"/>
     <remove-project name="platform/build" />
@@ -35,10 +31,10 @@
     <remove-project name="platform/system/update_engine" />
     <remove-project name="platform/system/vold" />
 
-    <!-- TWRP lives in TeamWin repo -->
+    <!-- TWRP recovery source. -->
     <project path="bootable/recovery" name="android_bootable_recovery" remote="TWRP-A16" revision="twrp-16.0"/>
 
-    <!-- Use TeamWin repos for full recovery compatibility -->
+    <!-- AOSP forks required for the recovery build. -->
     <project path="build/make" name="android_build" remote="TWRP-A16" revision="twrp-16.0">
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
         <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
@@ -68,16 +64,16 @@
     <project path="system/vold" name="android_system_vold" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="system/extras" name="android_system_extras" remote="TWRP-A16" revision="twrp-16.0"/>
 
-    <!-- Use TeamWin custom vendor repo for build system -->
+    <!-- TWRP vendor build configuration. -->
     <project path="vendor/twrp" name="android_vendor_twrp" remote="TWRP-A16" revision="twrp-16.0" />
 
     <!-- Include libmicrohttpd for TWRP -->
     <project name="android_external_libmicrohttpd" path="external/libmicrohttpd" remote="TWRP-A16" revision="twrp-16.0" />
     
-    <!-- Include fake OMAPI for TWRP -->
+    <!-- Include se_omapi for TWRP -->
     <project name="android_se_omapi" path="external/se_omapi" remote="TWRP-A16" revision="twrp-16.0" />
 
-    <!-- Include external Magisk repo for repack binaries -->
+    <!-- Magisk prebuilts for image repacking and property tools. -->
     <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TWRP-A16" revision="twrp-16.0"/>
 
     <!-- Include phh's treble repo for lptools support -->
