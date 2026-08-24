@@ -21,6 +21,7 @@
     <remove-project name="platform/external/libxml2" />
     <remove-project name="platform/external/sqlite" />
     <remove-project name="platform/external/libchrome" />
+    <remove-project name="platform/external/wpa_supplicant_8" />
     <remove-project name="platform/external/zstd" />
     <remove-project name="platform/frameworks/hardware/interfaces" />        
     <remove-project name="platform/hardware/interfaces"/>
@@ -86,6 +87,9 @@
 
     <!-- Include external/libncurses for bash and nano support -->
     <project path="external/libncurses" name="android_external_libncurses" remote="LineageOS" revision="lineage-23.2"/>
+
+    <!-- Include external/wpa_supplicant_8 for Wi-Fi support -->
+    <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="TWRP-A16" revision="twrp-16.0" />
 
     <!-- Include external/nano for nano support -->
     <project path="external/nano" name="android_external_nano" remote="LineageOS" revision="lineage-23.2"/>

@@ -354,7 +354,6 @@
     <remove-project path="external/wayland-protocols" />
     <remove-project path="external/webp" />
     <remove-project path="external/webrtc" />
-    <remove-project path="external/wpa_supplicant_8" />
     <remove-project path="external/wycheproof" />
     <remove-project path="external/xmp_toolkit" />
     <remove-project path="external/xz-java" />
