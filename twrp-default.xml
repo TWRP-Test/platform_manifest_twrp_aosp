@@ -17,6 +17,7 @@
     <remove-project name="platform/build/soong" />
     <remove-project name="platform/cts" />
     <remove-project name="platform/external/exfatprogs" />
+    <remove-project name="platform/external/freetype" />
     <remove-project name="platform/external/icu" />
     <remove-project name="platform/external/libxml2" />
     <remove-project name="platform/external/sqlite" />
@@ -53,6 +54,7 @@
     <project path="bionic" name="android_bionic" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="cts" name="android_cts" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="external/exfatprogs" name="android_external_exfatprogs" remote="TWRP-A16" revision="twrp-16.0"/>
+    <project path="external/freetype" name="android_external_freetype" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="external/icu" name="android_external_icu" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="external/libxml2" name="android_external_libxml2" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="external/sqlite" name="android_external_sqlite" remote="TWRP-A16" revision="twrp-16.0"/>
