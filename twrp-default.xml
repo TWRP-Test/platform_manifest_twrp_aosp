@@ -28,6 +28,7 @@
     <remove-project name="platform/hardware/interfaces"/>
     <remove-project name="platform/system/core" />
     <remove-project name="platform/system/extras"/>
+    <remove-project name="platform/system/hardware/interfaces"/>
     <remove-project name="platform/system/keymaster" />
     <remove-project name="platform/system/libhidl" />
     <remove-project name="platform/system/libziparchive" />
@@ -66,6 +67,7 @@
     <project path="hardware/interfaces" name="android_hardware_interfaces" remote="TWRP-A16" revision="twrp-16.0" />
     <project path="system/core" name="android_system_core" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="system/extras" name="android_system_extras" remote="TWRP-A16" revision="twrp-16.0"/>
+    <project path="system/hardware/interfaces" name="android_system_hardware_interfaces" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="system/keymaster" name="android_system_keymaster" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="system/libhidl" name="android_system_libhidl" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="system/libziparchive" name="android_system_libziparchive" remote="TWRP-A16" revision="twrp-16.0"/>
