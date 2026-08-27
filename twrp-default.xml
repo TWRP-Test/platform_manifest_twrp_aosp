@@ -21,6 +21,7 @@
     <remove-project name="platform/external/icu" />
     <remove-project name="platform/external/libchrome" />
     <remove-project name="platform/external/libxml2" />
+    <remove-project name="platform/external/scrypt" />
     <remove-project name="platform/external/sqlite" />
     <remove-project name="platform/external/wpa_supplicant_8" />
     <remove-project name="platform/external/zstd" />
@@ -60,6 +61,7 @@
     <project path="external/icu" name="android_external_icu" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="external/libchrome" name="android_external_libchrome" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="external/libxml2" name="android_external_libxml2" remote="TWRP-A16" revision="twrp-16.0"/>
+    <project path="external/scrypt" name="android_external_scrypt" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="external/sqlite" name="android_external_sqlite" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="TWRP-A16" revision="twrp-16.0" />
     <project path="external/zstd" name="android_external_zstd" remote="TWRP-A16" revision="twrp-16.0"/>
