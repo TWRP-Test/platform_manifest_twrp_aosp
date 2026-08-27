@@ -19,9 +19,9 @@
     <remove-project name="platform/external/exfatprogs" />
     <remove-project name="platform/external/freetype" />
     <remove-project name="platform/external/icu" />
+    <remove-project name="platform/external/libchrome" />
     <remove-project name="platform/external/libxml2" />
     <remove-project name="platform/external/sqlite" />
-    <remove-project name="platform/external/libchrome" />
     <remove-project name="platform/external/wpa_supplicant_8" />
     <remove-project name="platform/external/zstd" />
     <remove-project name="platform/frameworks/hardware/interfaces" />        
@@ -30,6 +30,7 @@
     <remove-project name="platform/system/extras"/>
     <remove-project name="platform/system/keymaster" />
     <remove-project name="platform/system/libhidl" />
+    <remove-project name="platform/system/libziparchive" />
     <remove-project name="platform/system/security" />
     <remove-project name="platform/system/sepolicy" />
     <remove-project name="platform/system/update_engine" />
@@ -56,20 +57,22 @@
     <project path="external/exfatprogs" name="android_external_exfatprogs" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="external/freetype" name="android_external_freetype" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="external/icu" name="android_external_icu" remote="TWRP-A16" revision="twrp-16.0"/>
+    <project path="external/libchrome" name="android_external_libchrome" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="external/libxml2" name="android_external_libxml2" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="external/sqlite" name="android_external_sqlite" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="external/libchrome" name="android_external_libchrome" remote="TWRP-A16" revision="twrp-16.0"/>
+    <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="TWRP-A16" revision="twrp-16.0" />
     <project path="external/zstd" name="android_external_zstd" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="frameworks/hardware/interfaces" name="android_frameworks_hardware_interfaces" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="hardware/interfaces" name="android_hardware_interfaces" remote="TWRP-A16" revision="twrp-16.0" />
     <project path="system/core" name="android_system_core" remote="TWRP-A16" revision="twrp-16.0"/>
+    <project path="system/extras" name="android_system_extras" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="system/keymaster" name="android_system_keymaster" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="system/libhidl" name="android_system_libhidl" remote="TWRP-A16" revision="twrp-16.0"/>
+    <project path="system/libziparchive" name="android_system_libziparchive" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="system/sepolicy" name="android_system_sepolicy" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="system/security" name="android_system_security" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="system/update_engine" name="android_system_update_engine" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="system/vold" name="android_system_vold" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="system/extras" name="android_system_extras" remote="TWRP-A16" revision="twrp-16.0"/>
 
     <!-- TWRP vendor build configuration. -->
     <project path="vendor/twrp" name="android_vendor_twrp" remote="TWRP-A16" revision="twrp-16.0" />
@@ -91,9 +94,6 @@
 
     <!-- Include external/libncurses for bash and nano support -->
     <project path="external/libncurses" name="android_external_libncurses" remote="LineageOS" revision="lineage-23.2"/>
-
-    <!-- Include external/wpa_supplicant_8 for Wi-Fi support -->
-    <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="TWRP-A16" revision="twrp-16.0" />
 
     <!-- Include external/nano for nano support -->
     <project path="external/nano" name="android_external_nano" remote="LineageOS" revision="lineage-23.2"/>
