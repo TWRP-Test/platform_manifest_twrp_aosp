@@ -25,7 +25,8 @@
     <remove-project name="platform/external/sqlite" />
     <remove-project name="platform/external/wpa_supplicant_8" />
     <remove-project name="platform/external/zstd" />
-    <remove-project name="platform/frameworks/hardware/interfaces" />        
+    <remove-project name="platform/frameworks/base" />
+    <remove-project name="platform/frameworks/hardware/interfaces" />
     <remove-project name="platform/hardware/interfaces"/>
     <remove-project name="platform/system/core" />
     <remove-project name="platform/system/extras"/>
@@ -65,6 +66,7 @@
     <project path="external/sqlite" name="android_external_sqlite" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="TWRP-A16" revision="twrp-16.0" />
     <project path="external/zstd" name="android_external_zstd" remote="TWRP-A16" revision="twrp-16.0"/>
+    <project path="frameworks/base" name="android_frameworks_base" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="frameworks/hardware/interfaces" name="android_frameworks_hardware_interfaces" remote="TWRP-A16" revision="twrp-16.0"/>
     <project path="hardware/interfaces" name="android_hardware_interfaces" remote="TWRP-A16" revision="twrp-16.0" />
     <project path="system/core" name="android_system_core" remote="TWRP-A16" revision="twrp-16.0"/>
