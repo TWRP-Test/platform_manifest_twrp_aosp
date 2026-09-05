@@ -21,7 +21,7 @@ Then to sync up:
 
 Then to setup the build:
 
-     cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_<device>-bp2a-eng
+     cd <source-dir>; export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_<device>
 
 The build target is dependent on the device, and should reflect the location of stock recovery on the device. Issue the build command that applies to your device:
 
@@ -31,6 +31,6 @@ The build target is dependent on the device, and should reflect the location of 
 
 ### Special Notes for this branch
 
-- For android devices with Weaver+Strongbox+OMAPI.
+- For android devices with weaver + omapi.
+- FDE decryption will not be supported in this branch.
 - Device makefile in the device tree and dependencies file should use the "twrp" prefix.
-- FDE decryption is not presently supported in this branch.
