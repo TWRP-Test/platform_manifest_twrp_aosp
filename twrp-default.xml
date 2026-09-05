@@ -99,7 +99,7 @@
     <project path="external/bash" name="android_external_bash" remote="LineageOS" revision="lineage-23.2"/>
 
     <!-- Include external/libncurses for bash and nano support -->
-    <project path="external/libncurses" name="android_external_libncurses" remote="LineageOS" revision="lineage-23.2"/>
+    <project path="external/libncurses" name="android_external_libncurses" remote="TWRP-A16" revision="twrp-16.0"/>
 
     <!-- Include external/nano for nano support -->
     <project path="external/nano" name="android_external_nano" remote="LineageOS" revision="lineage-23.2"/>
