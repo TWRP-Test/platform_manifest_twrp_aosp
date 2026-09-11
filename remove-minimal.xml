@@ -337,7 +337,6 @@
     <remove-project path="external/tpm2-tss" />
     <remove-project path="external/tremolo" />
     <remove-project path="external/turbine" />
-    <remove-project path="external/ublksrv" />
     <remove-project path="external/unicode" />
     <remove-project path="external/usb-ids" />
     <remove-project path="external/v4l2_codec2" />

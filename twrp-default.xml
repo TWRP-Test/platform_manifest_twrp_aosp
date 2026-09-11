@@ -4,7 +4,7 @@
             fetch="https://github.com/LineageOS"
             review="https://review.lineageos.org"/>
 
-    <remote name="TWRP-A16"
+    <remote name="twrp-16.0"
             fetch="https://github.com/TWRP-Test"/>
 
     <remote name="github"
@@ -23,6 +23,7 @@
     <remove-project name="platform/external/libxml2" />
     <remove-project name="platform/external/scrypt" />
     <remove-project name="platform/external/sqlite" />
+    <remove-project name="platform/external/ublksrv" />
     <remove-project name="platform/external/wpa_supplicant_8" />
     <remove-project name="platform/external/zstd" />
     <remove-project name="platform/frameworks/base" />
@@ -40,10 +41,10 @@
     <remove-project name="platform/system/vold" />
 
     <!-- TWRP recovery source. -->
-    <project path="bootable/recovery" name="android_bootable_recovery" remote="TWRP-A16" revision="twrp-16.0"/>
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="twrp-16.0" revision="twrp-16.0"/>
 
     <!-- AOSP forks required for the recovery build. -->
-    <project path="build/make" name="android_build" remote="TWRP-A16" revision="twrp-16.0">
+    <project path="build/make" name="android_build" remote="twrp-16.0" revision="twrp-16.0">
         <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
         <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
         <linkfile src="core" dest="build/core" />
@@ -51,46 +52,52 @@
         <linkfile src="target" dest="build/target" />
         <linkfile src="tools" dest="build/tools" />
     </project>
-    <project path="build/soong" name="android_build_soong" remote="TWRP-A16" revision="twrp-16.0">
+    <project path="build/soong" name="android_build_soong" remote="twrp-16.0" revision="twrp-16.0">
         <linkfile src="root.bp" dest="Android.bp" />
         <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
     </project>
-    <project path="bionic" name="android_bionic" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="cts" name="android_cts" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="external/exfatprogs" name="android_external_exfatprogs" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="external/freetype" name="android_external_freetype" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="external/icu" name="android_external_icu" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="external/libchrome" name="android_external_libchrome" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="external/libxml2" name="android_external_libxml2" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="external/scrypt" name="android_external_scrypt" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="external/sqlite" name="android_external_sqlite" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="TWRP-A16" revision="twrp-16.0" />
-    <project path="external/zstd" name="android_external_zstd" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="frameworks/base" name="android_frameworks_base" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="frameworks/hardware/interfaces" name="android_frameworks_hardware_interfaces" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="hardware/interfaces" name="android_hardware_interfaces" remote="TWRP-A16" revision="twrp-16.0" />
-    <project path="system/core" name="android_system_core" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="system/extras" name="android_system_extras" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="system/hardware/interfaces" name="android_system_hardware_interfaces" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="system/keymaster" name="android_system_keymaster" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="system/libhidl" name="android_system_libhidl" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="system/libziparchive" name="android_system_libziparchive" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="system/sepolicy" name="android_system_sepolicy" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="system/security" name="android_system_security" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="system/update_engine" name="android_system_update_engine" remote="TWRP-A16" revision="twrp-16.0"/>
-    <project path="system/vold" name="android_system_vold" remote="TWRP-A16" revision="twrp-16.0"/>
+    <project path="bionic" name="android_bionic" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="cts" name="android_cts" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="external/exfatprogs" name="android_external_exfatprogs" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="external/freetype" name="android_external_freetype" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="external/icu" name="android_external_icu" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="external/libchrome" name="android_external_libchrome" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="external/libxml2" name="android_external_libxml2" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="external/scrypt" name="android_external_scrypt" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="external/sqlite" name="android_external_sqlite" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="external/wpa_supplicant_8" name="android_external_wpa_supplicant_8" remote="twrp-16.0" revision="twrp-16.0" />
+    <project path="external/zstd" name="android_external_zstd" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="frameworks/base" name="android_frameworks_base" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="frameworks/hardware/interfaces" name="android_frameworks_hardware_interfaces" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="hardware/interfaces" name="android_hardware_interfaces" remote="twrp-16.0" revision="twrp-16.0" />
+    <project path="system/core" name="android_system_core" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="system/extras" name="android_system_extras" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="system/hardware/interfaces" name="android_system_hardware_interfaces" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="system/keymaster" name="android_system_keymaster" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="system/libhidl" name="android_system_libhidl" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="system/libziparchive" name="android_system_libziparchive" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="system/sepolicy" name="android_system_sepolicy" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="system/security" name="android_system_security" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="system/update_engine" name="android_system_update_engine" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="system/vold" name="android_system_vold" remote="twrp-16.0" revision="twrp-16.0"/>
 
     <!-- TWRP vendor build configuration. -->
-    <project path="vendor/twrp" name="android_vendor_twrp" remote="TWRP-A16" revision="twrp-16.0" />
+    <project path="vendor/twrp" name="android_vendor_twrp" remote="twrp-16.0" revision="twrp-16.0" />
 
     <!-- Include libmicrohttpd for TWRP -->
-    <project name="android_external_libmicrohttpd" path="external/libmicrohttpd" remote="TWRP-A16" revision="twrp-16.0" />
+    <project name="android_external_libmicrohttpd" path="external/libmicrohttpd" remote="twrp-16.0" revision="twrp-16.0" />
     
+    <!-- Include external/libncurses for bash and nano support -->
+    <project path="external/libncurses" name="android_external_libncurses" remote="twrp-16.0" revision="twrp-16.0"/>
+
     <!-- Include se_omapi for TWRP -->
-    <project name="android_se_omapi" path="external/se_omapi" remote="TWRP-A16" revision="twrp-16.0" />
+    <project name="android_se_omapi" path="external/se_omapi" remote="twrp-16.0" revision="twrp-16.0" />
 
     <!-- Magisk prebuilts for image repacking and property tools. -->
-    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="TWRP-A16" revision="twrp-16.0"/>
+    <project path="external/magisk-prebuilt" name="external_magisk-prebuilt" remote="twrp-16.0" revision="twrp-16.0"/>
+
+    <!-- Include android-17.0.0_r1 external/ublksrv for UBLK support -->
+    <project path="external/ublksrv" name="platform/external/ublksrv" remote="aosp" revision="refs/tags/android-17.0.0_r1" groups="pdk" />
 
     <!-- Include phh's treble repo for lptools support -->
     <project name="phhusson/vendor_lptools" path="external/lptools" remote="github" revision="master" />
@@ -98,8 +105,6 @@
     <!-- Include external/bash for bash support -->
     <project path="external/bash" name="android_external_bash" remote="LineageOS" revision="lineage-23.2"/>
 
-    <!-- Include external/libncurses for bash and nano support -->
-    <project path="external/libncurses" name="android_external_libncurses" remote="TWRP-A16" revision="twrp-16.0"/>
 
     <!-- Include external/nano for nano support -->
     <project path="external/nano" name="android_external_nano" remote="LineageOS" revision="lineage-23.2"/>
