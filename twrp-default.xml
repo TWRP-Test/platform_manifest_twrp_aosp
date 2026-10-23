@@ -43,10 +43,10 @@
     <remove-project name="platform/system/vold" />
 
     <!-- TWRP recovery source. -->
-    <project path="bootable/recovery" name="android_bootable_recovery" remote="twrp-16.0" revision="lvgl"/>
+    <project path="bootable/recovery" name="android_bootable_recovery" remote="twrp-16.0" revision="twrp-16.0"/>
 
     <!-- LVGL source for gui2. -->
-    <project path="external/lvgl" name="android_external_lvgl" remote="twrp-16.0" revision="lvgl"/>
+    <project path="external/lvgl" name="android_external_lvgl" remote="twrp-16.0" revision="twrp-16.0"/>
 
     <!-- Codec and WebM muxer used by GUI2 screen recording. -->
     <project path="external/libvpx" name="android_external_libvpx" remote="twrp-16.0" revision="twrp-16.0"/>
