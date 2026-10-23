@@ -19,6 +19,8 @@
     <remove-project name="platform/external/exfatprogs" />
     <remove-project name="platform/external/freetype" />
     <remove-project name="platform/external/icu" />
+    <remove-project name="platform/external/libvpx" />
+    <remove-project name="platform/external/libwebm" />
     <remove-project name="platform/external/libchrome" />
     <remove-project name="platform/external/libxml2" />
     <remove-project name="platform/external/scrypt" />
@@ -42,6 +44,13 @@
 
     <!-- TWRP recovery source. -->
     <project path="bootable/recovery" name="android_bootable_recovery" remote="twrp-16.0" revision="twrp-16.0"/>
+
+    <!-- LVGL source for gui2. -->
+    <project path="external/lvgl" name="android_external_lvgl" remote="twrp-16.0" revision="twrp-16.0"/>
+
+    <!-- Codec and WebM muxer used by GUI2 screen recording. -->
+    <project path="external/libvpx" name="android_external_libvpx" remote="twrp-16.0" revision="twrp-16.0"/>
+    <project path="external/libwebm" name="android_external_libwebm" remote="twrp-16.0" revision="twrp-16.0"/>
 
     <!-- AOSP forks required for the recovery build. -->
     <project path="build/make" name="android_build" remote="twrp-16.0" revision="twrp-16.0">
